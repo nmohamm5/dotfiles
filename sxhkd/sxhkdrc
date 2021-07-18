@@ -1,0 +1,16 @@
+#Nabil Mohammed
+#Sxhkd Keybinds
+
+#Increase/Decrease default audio sink by 10
+XF86Audio{RaiseVolume,LowerVolume}
+    pulsemixer --change-volume {+10,-10} ;\
+    pkill -RTMIN+10 dwmblocks
+
+#Mute/Unmute default audio sink
+XF86AudioMute
+    if [[ $(pulsemixer --get-mute) -eq 0 ]]; then pulsemixer --mute; else pulsemixer --unmute; fi; pkill -RTMIN+10 dwmblocks
+
+#Toggle screen lock
+ctrl + alt + l
+    slock
+

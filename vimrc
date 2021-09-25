@@ -27,7 +27,11 @@ Plug 'Yggdroot/indentLine'
 Plug 'vim-airline/vim-airline'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'jpalardy/vim-slime.git'
 call plug#end()
+
+"vim-slime settings
+let g:slime_target = "tmux"
 
 "colorscheme
 let g:gruvbox_contrast_dark = 'hard'

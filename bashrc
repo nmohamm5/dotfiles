@@ -31,6 +31,9 @@ alias grep='grep --color=auto'
 #add scripts to path
 export PATH=${PATH}:/home/nabil/.scripts
 
+#needed to fix matlab grey screen
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/nabil/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"

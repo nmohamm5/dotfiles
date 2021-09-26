@@ -25,6 +25,9 @@ alias dv='dirs -v'
 alias geneious_prime='/home/nabil/.wine/drive_c/Program Files/Geneious Prime/Geneious Prime.exe'
 alias ipython='ipython --no-autoindent'
 
+#temp aliases
+alias bme205='cd /home/nabil/Documents/Classes/Fall_21/BME205'
+
 #adding color to reg commands
 alias ls='ls -hN --color=auto --group-directories-first'
 alias grep='grep --color=auto'

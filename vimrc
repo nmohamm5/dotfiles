@@ -26,12 +26,21 @@ Plug 'morhetz/gruvbox'
 Plug 'Yggdroot/indentLine'
 Plug 'vim-airline/vim-airline'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'jpalardy/vim-slime.git'
+Plug 'https://github.com/jpalardy/vim-slime.git'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
 call plug#end()
 
 "vim-slime settings
 let g:slime_target = "tmux"
+
+"vim-vnip settings
+imap <expr> <C-u>   vsnip#expandable()  ? '<Plug>(vsnip-expand)': '<C-u>'
+smap <expr> <C-u>   vsnip#expandable()  ? '<Plug>(vsnip-expand)': '<C-u>'
+imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
+smap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
+imap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
+smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
 
 "colorscheme
 let g:gruvbox_contrast_dark = 'hard'

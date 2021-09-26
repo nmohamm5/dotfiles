@@ -23,6 +23,7 @@ alias sv='sudo vim'
 alias pd='pushd .'
 alias dv='dirs -v'
 alias geneious_prime='/home/nabil/.wine/drive_c/Program Files/Geneious Prime/Geneious Prime.exe'
+alias ipython='ipython --no-autoindent'
 
 #adding color to reg commands
 alias ls='ls -hN --color=auto --group-directories-first'
